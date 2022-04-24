@@ -1,0 +1,16 @@
+可以使用百度爬虫批量爬url，也可以不使用。
+
+但是要使用sqlmapapi,必须先要开启sqlmapapi，他的地址就在sqlmap的目录下，和sqlmap在一起。
+启动命令：python2 sqlmapapi.py -s
+
+使用的话先运行
+python3 百度url爬虫.py
+爬虫就会把url爬取并保存在ip.txt中。
+
+然后我们再运行
+python3 sqlmapAPI自动化注入.py
+脚本就会自动对ip.txt中的url进行扫描，然后将扫描结果保存到scan_sql.txt中。
+
+
+不使用的话就直接将要扫描的url按照一行一个都格式写到ip.txt中就好了。
+然后启动sqlmapAPI就OK了。
